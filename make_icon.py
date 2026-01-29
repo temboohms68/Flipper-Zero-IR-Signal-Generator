@@ -2,7 +2,8 @@ from PIL import Image
 import os
 
 try:
-    save_path = '/home/sacriphanius/Opt/Momentum-Firmware/applications_user/IR_Jammer/icon.png'
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    save_path = os.path.join(current_dir, 'icon.png')
     img = Image.new('1', (10, 10), color=0)
     img.save(save_path)
     print(f"Icon generated successfully at {save_path}")
