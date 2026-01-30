@@ -1,57 +1,51 @@
-# IR Signal Generator for Flipper Zero
+# 📡 IR Signal Generator for Flipper Zero
 
-[English](#english) | [Türkçe](#türkçe)
+![Preview](preview.png)
 
----
+A professional-grade Infrared Signal Generator for Flipper Zero with an advanced dashboard, real-time spectrum visualization, and automatic external module support.
 
-<a name="english"></a>
-## 🇬🇧 English
+## 🌟 Features / Özellikler
 
-### Description
-This is a simple **IR Signal Generator** application designed for the **Flipper Zero**. It allows you to generate continuous infrared signals at a configurable frequency.
+### English
+- **🚀 Advanced UI:** Sleek, rounded design with a professional header and compact footer.
+- **📈 Spectrum Visualization:** Real-time RF-style line spectrum with noise and carrier peak simulation.
+- **✨ Animated Splash:** Custom opening animation featuring "by Sacriphanius".
+- **🔌 External IR Support:** Automatic detection of external IR modules via GPIO.
+- **⚡ OTG Power:** Automatically enables 5V power for external hardware.
+- **🌈 Dynamic LED:** Frequency-reactive LED blinking (Red/Green/Blue/Purple).
+- **🕹️ Live Adjust:** Change frequency on-the-fly without stopping the signal.
 
-**Disclaimer:** This application is for **educational and testing purposes only**. Do not use it to disrupt legitimate communications or services. The author is not responsible for any misuse.
-
-### Features
-- **Adjustable Frequency:** Change the signal frequency (default: 38kHz) using Left/Right buttons.
-- **Toggle Generation:** Start and stop signal generation with the OK button.
-- **Visual Feedback:** Screen indicates when signal generation is active.
-
-### How to Build
-1. Clone this repository into your Flipper Zero firmware's `applications_user` directory.
-2. Build the firmware or just this application using `fbt`.
-   ```bash
-   ./fbt fap_ir_signal_generator
-   ```
-
-### Controls
-- **OK Button:** Start / Stop Generation
-- **Left / Right:** Decrease / Increase Frequency (Steps of 1kHz)
-- **Back:** Exit Application
+### Türkçe
+- **🚀 Gelişmiş Arayüz:** Profesyonel başlık ve kompakt alt bilgi ile şık, oval tasarım.
+- **📈 Spektrum Görselleştirme:** Gürültü ve taşıyıcı tepe noktası simülasyonlu gerçek zamanlı RF tarzı spektrum.
+- **✨ Animasyonlu Splash:** "by Sacriphanius" imzalı özel açılış animasyonu.
+- **🔌 Harici IR Desteği:** GPIO üzerinden harici IR modüllerinin otomatik algılanması.
+- **⚡ OTG Güç:** Harici donanım için otomatik 5V güç çıkışı.
+- **🌈 Dinamik LED:** Frekansa duyarlı LED yanıp sönme (Kırmızı/Yeşil/Mavi/Mor).
+- **🕹️ Canlı Ayar:** Sinyali durdurmadan anlık frekans değişimi.
 
 ---
 
-<a name="türkçe"></a>
-## 🇹🇷 Türkçe
+## 🎮 Controls / Kontroller
 
-### Açıklama
-Bu, **Flipper Zero** için tasarlanmış basit bir **Kızılötesi (IR) Sinyal Üretici** uygulamasıdır. Ayarlanabilir bir frekansta sürekli IR ışığı yayarak sinyal üretmenizi sağlar.
+| Button / Tuş | Action (EN) | İşlem (TR) |
+| :--- | :--- | :--- |
+| **OK** | Toggle Signal (TX/STOP) | Sinyali Başlat/Durdur |
+| **Left / Right** | Adjust Frequency | Frekansı Ayarla |
+| **Back** | Quit Application | Uygulamadan Çık |
 
-**Yasal Uyarı:** Bu uygulama yalnızca **eğitim ve test amaçlıdır**. Meşru iletişimleri veya hizmetleri aksatmak için kullanmayınız. Yazar, herhangi bir kötüye kullanımdan sorumlu değildir.
+---
 
-### Özellikler
-- **Ayarlanabilir Frekans:** Sol/Sağ tuşlarını kullanarak sinyal frekansını değiştirebilirsiniz (Varsayılan: 38kHz).
-- **Üretimi Aç/Kapat:** OK tuşu ile sinyal üretimini başlatıp durdurabilirsiniz.
-- **Görsel Geri Bildirim:** Üretim aktif olduğunda ekranda belirtilir.
+## 🛠️ Installation / Kurulum
 
-### Nasıl Derlenir (Build)
-1. Bu depoyu Flipper Zero yazılımınızın `applications_user` dizinine klonlayın.
-2. Yazılımı veya sadece bu uygulamayı `fbt` kullanarak derleyin.
-   ```bash
-   ./fbt fap_ir_signal_generator
-   ```
+1. Clone or copy this folder to `applications_user/` in your firmware.
+2. Run the following command from the firmware root:
 
-### Kontroller
-- **OK Tuşu:** Sinyal Üretimini Başlat / Durdur
-- **Sol / Sağ:** Frekansı Azalt / Artır (1kHz'lik adımlarla)
-- **Geri:** Uygulamadan Çık
+```bash
+./fbt fap_ir_signal_generator
+```
+
+---
+
+## 👨‍💻 Author
+Developed by **Sacriphanius**
