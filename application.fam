@@ -1,8 +1,8 @@
 App(
-    appid="ir_jammer",
-    name="IR Jammer",
+    appid="ir_signal_generator",
+    name="IR Signal Generator",
     apptype=FlipperAppType.EXTERNAL,
-    entry_point="ir_jammer_app",
+    entry_point="ir_signal_generator_app",
 
     requires=["gui"],
     stack_size=2 * 1024,
