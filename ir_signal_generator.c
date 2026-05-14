@@ -162,8 +162,8 @@ static void app_draw_callback(Canvas *canvas, void *ctx) {
     } else {
       if (app_state.rx_frequency > 0) {
         char freq_buf[20];
-        snprintf(freq_buf, sizeof(freq_buf), "Found: %lu kHz",
-                 app_state.rx_frequency / 1000);
+        snprintf(freq_buf, sizeof(freq_buf), "Found: %ld kHz",
+                 (long)(app_state.rx_frequency / 1000));
 
         canvas_set_font(canvas, FontPrimary);
         canvas_draw_str_aligned(canvas, 64, text_y, AlignCenter, AlignCenter,
@@ -192,7 +192,7 @@ static void app_draw_callback(Canvas *canvas, void *ctx) {
     canvas_draw_str_aligned(canvas, 18, 20, AlignCenter, AlignCenter, "FREQ");
 
     char buffer[16];
-    snprintf(buffer, sizeof(buffer), "%lu", app_state.frequency / 1000);
+    snprintf(buffer, sizeof(buffer), "%u", (unsigned)(app_state.frequency / 1000));
 
     canvas_set_font(canvas, FontPrimary);
     canvas_draw_str_aligned(canvas, 18, 35, AlignCenter, AlignCenter, buffer);
